@@ -1,0 +1,57 @@
+        .top-images {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .top-images ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center; /* Centra verticalmente */
+            height: 150px; /* Altura fija (ajustar según necesidad) */
+        }
+
+        .top-images ul li {
+            box-sizing: border-box;
+            height: 100%; /* Ocupa toda la altura del ul */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px; /* Margen horizontal a cada lado del li */
+        }
+
+        .top-images ul li img {
+            max-height: 100%;
+            max-width: 100%;
+            display: block;
+            object-fit: contain; /* o object-fit: cover si prefieres que se recorten */
+        }
+
+        /* Media Queries para ajustar la altura y márgenes en diferentes pantallas */
+        @media (max-width: 992px) {
+            .top-images ul {
+                height: 120px;
+            }
+            .top-images ul li {
+                padding: 0 8px; /* Márgenes más pequeños en pantallas medianas */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-images ul {
+                height: 100px;
+            }
+            .top-images ul li {
+                padding: 0 5px; /* Márgenes aún más pequeños en pantallas pequeñas */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .top-images ul {
+                height: 80px;
+            }
+            .top-images ul li {
+                padding: 0 3px; /* Márgenes mínimos en móviles */
+            }
+        }
