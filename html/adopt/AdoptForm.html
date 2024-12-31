@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adoption Form</title>
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <h1>Adoption Form</h1>
+    <section>
+        <article>
+            <form>
+                <!--should we add a entrance to add the ID, in photo or in number-->
+                <div id="personalInfo">
+                    <h2>Personal Information</h2>
+                    <p><label>Name: <input name=name type="text" required></label></p>
+                    <p><label>Email: <input name=email type="email" required></label></p>
+                    <p><label>Phone: <input name=phone type="tel" required></label></p>
+                    <p><label>Street: <input name=street type="text" required></label></p>
+                    <p><label>City: <input name=city type="text" required></label></p>
+                    <p><label>Zip Code: <input name=zipCode type="number" required></label></p> <!--I need to change to see if its possible to take out the arrows becasue the zip codes are long-->
+                    <p><label>Birth Date: <input name=birthdate type="date" required></label></p>
+
+                    <p>Do you have Facebook</p>
+                    <p><input type="radio" id="yesFacebook" name=haveFacebook value="Yes"><label for="yesFacebook">Yes</label>                    
+                    <input type="radio" id="noFacebook" name=haveFacebook value="No"><label for="noFacebook">No</label></p>   
+                    <p><input type="text" name="facebookLink"></p><!-- this will only appear whenever the user has facebook -->                 
+
+                    <p>Do you have Instagram</p>
+                    <p><input type="radio" id="yesInstagram" name=haveInstagram value="Yes"><label for="yesInstagram">Yes</label>
+                    <input type="radio" id="noInstagram" name=haveInstagram value="No"><label for="noInstagram">No</label></p>
+                    <p><input type="text" name="instagramLink"></p><!-- this will only appear whenever the user has instagram -->
+                    
+                </div>
+
+                <div id="homeInfo">
+                    <h2>Home Information</h2>
+                    <p>What type of home do you live in?</p>
+                    <p><input type="radio" id="homeStatus" name=homeStatus value=flat><label for="homeStatus">Flat</label>
+                    <input type="radio" id="homeStatus" name=homeStatus value=house><label for="homeStatus">House</label>
+                    <input type="radio" id="homeStatus" name=homeStatus value=chalet><label for="homeStatus">Chalet</label>
+                    <input type="radio" id="homeStatus" name=homeStatus value=mansion><label for="homeStatus">Mansion</label>
+                    <input type="radio" id="homeStatus" name=homeStatus value=cotage><label for="homeStatus">Cotage</label></p>
+            
+                    <p>Do you have a garden?</p>
+                    <p><input type="radio" id="yesGarden" name=haveGarden value="Yes"><label for="yesGarden">Yes</label>
+                    <input type="radio" id="noGarden" name=haveGarden value="No"><label for="noGarden">No</label></p>
+
+                    <p>Can the pet scape?</p>
+                    <p><input type="radio" id="yesCanScape" name=canScape value="Yes"><label for="yesCanScape">Yes</label>
+                    <input type="radio" id="noCanScape" name=canScape value="No"><label for="noCanScape">No</label></p>
+                </div>
+
+                <div id="petOwner">
+                    <h2>Owner Pet</h2>
+                    <p>Do you have more pets?</p>
+                    <p><input type="radio" id="yesPet" name=havePet value="Yes"><label for="yesPet">Yes</label>
+                    <input type="radio" id="noPet" name=havePet value="No"><label for="noPet">No</label></p>
+                    <p>How many pets do you have?</p>
+                    <input type="number" name="petNumber"></p> <!--If the user has 1 in the what kind of pet do you have it will appear the what kind of pet do you have and if the number is more than 1, the type will change from radio to checkbox.-->
+                    <p>What kind of pet do you have?</p> <!-- this will only appear whenever the user has pets -->
+                    <p><input type="radio" id="petType" name=petType value="Dog"><label for="petType">Dog</label> <!-- The type needs to change whenever the user has more than one pet -->
+                    <input type="radio" id="petType" name=petType value="Cat"><label for="petType">Cat</label>
+                    <input type="radio" id="petType" name=petType value="Other"><label for="petType">Other</label></p>
+                    
+
+                    <p>Have you ever had pets before?</p>
+                    <p><input type="radio" id="hadPets" name=hadPets value="Yes"><label for="hadPets">Yes</label>
+                    <input type="radio" id="hadPets" name=hadPets value="No"><label for="hadPets">No</label></p>
+
+                    <p>What kind of pet did you have?</p> <!-- this will only appear whenever the user has pets -->
+                    <p><input type="radio" id="petType2" name=petType2 value="Dog"><label for="petType">Dog</label><!-- The type needs to change whenever the user has more than one pet -->
+                    <input type="radio" id="petType2" name=petType2 value="Cat"><label for="petType">Cat</label>
+                    <input type="radio" id="petType2" name=petType2 value="Other"><label for="petType">Other</label></p>
+                </div>
+
+                <div id="prospectivePet">
+                    <h2>About the prospective pet</h2>
+                    <p><textarea name="whyAdopt">Why do you want to adopt this pet?</textarea></p>
+                    <p><textarea name="carePet">How would you take care of the pet?</textarea></p>
+
+                    <p>Does your family consent the adoption?</p>
+                    <p><input type="radio" id="consent" name=consent value="Yes"><label for="consent">Yes</label>                    
+                    <input type="radio" id="consent" name=consent value="No"><label for="consent">No</label></p>
+                    
+                    <p>Would you like to neuter the pet?</p>
+                    <p><input type="radio" id="neuterthePet" name=neuterthePet value="Yes"><label for="neuterthePet">Yes</label>                   
+                    <input type="radio" id="neuterthePet" name=neuterthePet value="No"><label for="neuterthePet">No</label></p>
+                    <p><textarea name="why">Why</textarea></p>
+
+                    <p>What type of home do you live in?</p>
+                    <input type="checkbox" id="homeAllowance" name=homeAllowance value="living Room"><label for="homeAllowance">Living room</label>
+                    <input type="checkbox" id="homeAllowance" name=homeAllowance value=kitchen><label for="homeAllowance">kithcen</label>
+                    <input type="checkbox" id="homeAllowance" name=homeAllowance value=beedroom><label for="homeAllowance">Bedroom</label>
+                    <input type="checkbox" id="homeAllowance" name=homeAllowance value=terrace><label for="homeAllowance">Terrace</label>
+                    <input type="checkbox" id="homeAllowance" name=homeAllowance value=bathroom><label for="homeAllowance">Bathroom</label></p>
+                </div>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </article>
+        
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>

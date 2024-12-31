@@ -55,3 +55,8 @@
                 padding: 0 3px; /* Márgenes mínimos en móviles */
             }
         }
+
+        .logo {
+            width: 500px;
+            height: auto;
+        }   
