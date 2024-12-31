@@ -1,3 +1,4 @@
+/* Adopt.html */
         .top-images {
             width: 100%;
             box-sizing: border-box;
@@ -60,3 +61,89 @@
             width: 500px;
             height: auto;
         }   
+
+/* AdoptForm.html */
+
+        #adoptionFormHeader {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form {
+            padding: 20px;
+            border-radius: 5px; 
+            border-radius: 5px;
+        }
+
+        .form h2 {
+            text-align: left;
+            margin-bottom: 5px;
+            position: relative;
+            margin-bottom: 30px;
+          }
+          
+          .form h2::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%); /* Centra el subrayado horizontalmente */
+            width: 100%; /* Ajusta el ancho del subrayado según sea necesario */
+            height: 2px;
+            background-color: #ccc;
+            bottom: -10px; /* Ajusta la posición vertical del subrayado */
+          }
+
+          .form p{
+            margin-bottom: 10px;
+          }
+
+          .form label{
+            display: inline-block;
+            margin-bottom: 15px;
+          }
+          
+          .form input[type="text"],
+          .form input[type="email"],
+          .form input[type="tel"],
+          .form input[type="number"],
+          .form input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+          }
+
+          .form textarea {
+            width: auto ;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+          } 
+
+        .form input[type="radio"],
+        .form input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+          }
+
+        .form input[name="facebookLink"],
+        .form input[name="instagramLink"] {
+        display: none; 
+        }
+          
+        .form input[name="haveFacebook"]:checked ~ input[name="facebookLink"],
+        .form input[name="haveInstagram"]:checked ~ input[name="instagramLink"] {
+        display: block; 
+        }
+
